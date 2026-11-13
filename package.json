@@ -1,0 +1,44 @@
+{
+  "name": "chrono-stopwatch",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A premium, keyboard-driven stopwatch built with React, Vite and Tailwind CSS.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^0.469.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.7"
+  },
+  "homepage": "https://trymuseai.im/apps/48a022cdbd1ef08d/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zabeeh-Ullah-Dev/Chrono-Stopwatch.git"
+  },
+  "author": "Zabeeh Ullah",
+  "license": "MIT",
+  "keywords": [
+    "stopwatch",
+    "timer",
+    "react",
+    "vite",
+    "tailwindcss",
+    "laps",
+    "productivity",
+    "csv-export"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

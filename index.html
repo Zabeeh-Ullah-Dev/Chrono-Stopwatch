@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#050a18" />
+    <title>Chrono — Premium Stopwatch</title>
+    <meta
+      name="description"
+      content="Chrono is a precision stopwatch with lap history, fastest/slowest lap detection, keyboard shortcuts, dark mode, offline persistence and CSV export."
+    />
+    <meta property="og:title" content="Chrono — Premium Stopwatch" />
+    <meta
+      property="og:description"
+      content="Precision stopwatch with lap analytics, keyboard shortcuts, dark mode and CSV export. Built with React, Vite and Tailwind CSS."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Apply the saved theme before first paint to avoid a flash.
+      try {
+        var saved = localStorage.getItem('chrono:theme');
+        var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        var theme = saved || (prefersLight ? 'light' : 'dark');
+        document.documentElement.classList.toggle('dark', theme === 'dark');
+        document.documentElement.style.colorScheme = theme;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
